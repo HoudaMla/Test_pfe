@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto; /* Centers the container horizontally */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stacks div and table vertically */
+  align-items: center; /* Centers the child elements horizontally */
+  justify-content: center; /* Optionally, centers the content vertically */
+  text-align: center; /* Optional, if you want text inside div to be centered */
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+  display: block;
+  width: auto;
+  
+ 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+.table th, .table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table td {
+  color: #555;
+}
+
+
+
+.table .btn-info {
+  background-color: #17a2b8;
+}
+
+.table .btn-warning {
+  background-color: #ffc107;
+}
+
+.table .btn-danger {
+  background-color: #dc3545;
+}
+
+.table .btn-info:hover {
+  background-color: #138496;
+}
+
+.table .btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.table .btn-danger:hover {
+  background-color: #c82333;
+}

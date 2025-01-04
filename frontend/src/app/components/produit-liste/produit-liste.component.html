@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <h2>Liste des Produits</h2>
+    <button routerLink="/produits/ajouter" (click)="onClick()" class="btn btn-primary">Ajouter Produit</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Catégorie</th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produit of produits">
+            <td>{{produit.nom}}</td>
+            <td>{{produit.prix}}</td>
+            <td>{{produit.categorie}}</td>
+            <td id="btn" class="d-flex flex-wrap gap-2">
+              <button (click)="onClick1(produit._id)" class="btn btn-info col-2  ">Détails</button>
+              <button (click)="Update(produit._id)" class="btn btn-warning col-2 ">Modifier</button>
+              <button (click)="supprimerProduit(produit._id)" class="btn btn-danger col-2 ">Supprimer</button>
+          </td>
+          
+          
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+
+</body>
+
